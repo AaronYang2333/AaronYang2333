@@ -2,7 +2,7 @@
 
 ### Hello 嗨:wave:
 
-> Please give me an offer. :joy:
+> Please offer me a job. :joy:
 
 :cn: China Hangzhou <br>
 :video_game: Recommendation System<br>
