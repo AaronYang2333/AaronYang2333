@@ -4,8 +4,8 @@
 
 > If it hurts, it works. 
 
-:cn: China Hangzhou・
-:video_game: Recommendation System Engineer・
-:mortar_board: USC student・
+:cn: China Hangzhou・ <br>
+:video_game: Recommendation System Engineer・<br>
+:mortar_board: current USC student・<br>
 
 https://aaronyang2333.github.io/resume/
