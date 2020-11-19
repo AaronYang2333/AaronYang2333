@@ -5,7 +5,7 @@
 > Please offer me a job. :joy:
 
 :cn: China Hangzhou <br>
-:video_game: Data Engineer<br>
+:bookmark_tabs: Data Engineer<br>
 :mortar_board: current USC student<br>
 
 https://aaronyang2333.github.io/resume/
