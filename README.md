@@ -7,7 +7,7 @@
 
 :cn: China Hangzhou | 杭州<br>
 :bookmark_tabs: Data Engineer | 数据挖掘<br>
-:mortar_board: MS of Applied Data Science<br>
+:mortar_board: Applied Data Science<br>
 
 Resume: https://aaronyang2333.github.io/resume/cn/ <br>
 Blog: https://aaronyang2333.github.io/blog/ <br>
