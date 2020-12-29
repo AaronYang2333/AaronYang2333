@@ -3,11 +3,11 @@
 ### Hello 嗨 :wave:
 
 > Nice to say you here. <br>
-> 你这是弄啥嘞！
+> 吃了没！
 
-:cn: China Hangzhou 杭州<br>
-:bookmark_tabs: Data Engineer 数据挖掘<br>
-:mortar_board: current USC student<br>
+:cn: China Hangzhou | 杭州<br>
+:bookmark_tabs: Data Engineer | 数据挖掘<br>
+:mortar_board: Applied Data Science | 数据科学<br>
 
 Resume: https://aaronyang2333.github.io/resume/cn/ <br>
-Blog: https://aaronyang2333.github.io/blog/
+Blog: https://aaronyang2333.github.io/blog/ <br>
