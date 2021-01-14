@@ -125,7 +125,7 @@ gitalk:
 ##
 gitment:
   owner: AaronYang2333
-  repo: aaronyang2333.github.io/blog
+  repo: blog
   client_id: bb6dc79a147b7896b8e1
   client_secret: f1f1d3bc26f29569677365cc3de98ae0b17d7b1d
   desc: 不想说点儿啥么？(leave some comments!)
