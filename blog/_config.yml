@@ -24,9 +24,9 @@ pretty_urls:
 ## Docs: https://www.jsdelivr.com/?docs=gh
 ## If Github Pages deploy，you can ues jsdelivr settings
 #
-jsdelivr:
-  jsdelivr_url: https://cdn.jsdelivr.net/gh/
-  github_username: AaronYang2333
+# jsdelivr:
+#   jsdelivr_url: https://cdn.jsdelivr.net/gh/
+#   github_username: AaronYang2333
 
 
 # Custom Setting Start
