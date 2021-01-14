@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: AY's Note
+title: AYAYAY's Note
 subtitle: 瞎逼逼呗~~~
 author: Aaron Yang
 language: zh-CN
@@ -32,9 +32,9 @@ pretty_urls:
 # Custom Setting Start
 
 # Site settings
-SEOTitle: Aaron Yang AYAYAY 23333 aaron Bo USC dsci csci 551 552 553 570 560 544  
+SEOTitle: Current Tab  
 email: aaron19940628@gmail.com
-description: "ay's it blog"
+description: "aaron yang's IT blog"
 keyword: "Aaron,Yang,AYAYAY,23333,aaron,Bo,USC,dsci,csci,551,552,553,570,560,544,blog,Blog"
 header-img: img/header_img/newhome_bg.jpg
 archives-img: img/header_img/archive_bg2.jpg
@@ -89,19 +89,19 @@ featured-condition-size: 0    # A tag will be featured if the size of it is more
 
 ## Friends
 friends: [
-    {
-        title: "V_Vincen",
-        href: "https://v-vincen.life/"
-    },{
-        title: "Bean Tech",
-        href: "http://beantech.org"
-    },{
-        title: "Hux Blog",
-        href: "http://huangxuan.me"
-    },{
-        title: "Hexo",
-        href: "https://hexo.io/"
-    }
+    # {
+    #     title: "V_Vincen",
+    #     href: "https://v-vincen.life/"
+    # },{
+    #     title: "Bean Tech",
+    #     href: "http://beantech.org"
+    # },{
+    #     title: "Hux Blog",
+    #     href: "http://huangxuan.me"
+    # },{
+    #     title: "Hexo",
+    #     href: "https://hexo.io/"
+    # }
 ]
 
 
@@ -305,5 +305,6 @@ gitter:
 ##
 deploy:
   type: git
-  repo: https://github.com/<yourAccount>/<repo> # or https://gitee.com/<yourAccount>/<repo>
-  branch: <your-branch>
+  repo: https://github.com/AaronYang2333/blog.git
+  branch: master
+
