@@ -5,9 +5,10 @@ date: 2021-01-13 23:06:39
 subtitle: 
 header-img: /img/header_img/lml_bg.jpg
 tags: 
-- ElasticSearch7
+- CRUD
 - Syntax
 categories:
+- ElasticSearch7
 ---
 
 

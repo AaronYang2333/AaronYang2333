@@ -41,12 +41,12 @@ archives-img: img/header_img/archive_bg2.jpg
 
 
 # Favicon settings
-favicon: img/avatar/roguerabbit.jpg
+favicon: img/avatar/mona_lisa.ico
 
 
 # Signature Setup
 signature: true # show signature
-signature-img: img/signature/vincent-white.png
+signature-img: img/signature/ay-white.png
 
 
 # Wave settings
@@ -63,20 +63,17 @@ github_username: AaronYang2333
 # zhihu_username: WVincen
 weibo_username: 杨博Aaron
 douban_username: byang971
+leetcode_username: aaronyang2333
 
 
 # Sidebar Settings
 sidebar: true   # whether or not using Sidebar.
-sidebar-about-description: "Fat people have no future, either thin or die..."
-sidebar-avatar: img/avatar/fatpeople.jpg    # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-about-description: "What's Up Man!  吃了没yaa!"
+sidebar-avatar: img/avatar/mona_lisa.jpg    # use absolute URL, seeing it's used in both `/` and `/about/`
 widgets:
-- visitor   # busuanzi: https://busuanzi.ibruce.info/
-- featured-tags
 - short-about
-- recent-posts
-- friends-blog
-- archive
 - category
+- visitor   # busuanzi: https://busuanzi.ibruce.info/
 
 
 # widget behavior
@@ -114,7 +111,7 @@ friends: [
 gitalk:
   owner: AaronYang2333
   admin: AaronYang2333
-  repo: https://github.com/AaronYang2333/AaronYang2333
+  repo: aaronyang2333.github.io/blog
   clientID: 56adb2063b0402bb9bc8
   clientSecret: db54e085182780138cff7e15bd9415c335111e6a
   perPage: 10                     # Pagination size, with maximum 100.
@@ -126,14 +123,14 @@ gitalk:
 ## Gitment Settings
 ## Doc:https://github.com/imsun/gitment
 ##
-# gitment:
-#   owner:                          # Your GitHub ID. Required.
-#   repo:                           # The repository to store your comments. Make sure you're repo's owner. Required.
-#   client_id:                      # GitHub client ID. Required.
-#   client_secret:                  # GitHub client secret. Required.
-#   desc:                           # An optional description for your page, used in issue's body. Default ''.
-#   perPage: 10                     # An optional number to which comments will be paginated. Default 20.
-#   maxCommentHeight: 250           # An optional number to limit comments' max height, over which comments will be folded. Default 250.
+gitment:
+  owner: AaronYang2333
+  repo: aaronyang2333.github.io/blog
+  client_id: bb6dc79a147b7896b8e1
+  client_secret: f1f1d3bc26f29569677365cc3de98ae0b17d7b1d
+  desc: 不想说点儿啥么？(leave some comments!)
+  perPage: 10                     # An optional number to which comments will be paginated. Default 20.
+  maxCommentHeight: 250           # An optional number to limit comments' max height, over which comments will be folded. Default 250.
 
 ## Disqus settings
 ##
@@ -255,7 +252,7 @@ scroll: true
 # Tip
 tip:
   enable: true
-  copyright: If you like this blog or find it useful for you, you are welcome to comment on it. You are also welcome to share this blog, so that more people can participate in it. If the images used in the blog infringe your copyright, please contact the author to delete them. Thank you !
+  copyright: 不建议Ctrl+CV转载，多看看得了。(Not recommend you to reprint this article, come over to my site more frequently is enough.)
 
 
 # Social Share Post
@@ -298,7 +295,7 @@ theme: livemylife
 ## Docs:https://gitter.im/?utm_source=left-menu-logo
 ##
 gitter:
-  room: your-community/your-room
+  room: eclipse/deeplearning4j
 
 
 # Deployment
