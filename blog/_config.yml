@@ -24,9 +24,9 @@ pretty_urls:
 ## Docs: https://www.jsdelivr.com/?docs=gh
 ## If Github Pages deploy，you can ues jsdelivr settings
 #
-# jsdelivr:
-#   jsdelivr_url: https://cdn.jsdelivr.net/gh/
-#   github_username: V-Vincen
+jsdelivr:
+  jsdelivr_url: https://cdn.jsdelivr.net/gh/
+  github_username: AaronYang2333
 
 
 # Custom Setting Start
@@ -62,6 +62,7 @@ github_username: AaronYang2333
 # linkedin_username:  yourAccount
 # zhihu_username: WVincen
 weibo_username: 杨博Aaron
+douban_username: byang971
 
 
 # Sidebar Settings
@@ -111,11 +112,11 @@ friends: [
 ## Doc:https://github.com/gitalk/gitalk/blob/master/readme-cn.md
 ##
 gitalk:
-  owner:                          # 'GitHub repo owner'
-  admin:                          # 'GitHub repo'
-  repo:                           # ['GitHub repo owner and collaborators, only these guys can initialize github issues']
-  clientID:                       # 'GitHub Application Client ID'
-  clientSecret:                   # 'GitHub Application Client Secret'
+  owner: AaronYang2333
+  admin: AaronYang2333
+  repo: https://github.com/AaronYang2333/AaronYang2333
+  clientID: 56adb2063b0402bb9bc8
+  clientSecret: db54e085182780138cff7e15bd9415c335111e6a
   perPage: 10                     # Pagination size, with maximum 100.
   pagerDirection: last            # Comment sorting direction, available values are last and first.
   createIssueManually: false      # By default, Gitalk will create a corresponding github issue for your every single page automatically when the logined user is belong to the admin users. You can create it manually by setting this option to true

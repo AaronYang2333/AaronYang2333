@@ -1,6 +1,6 @@
 ---
 layout: "categories"
-title: "Categories"
-description: "Hi , here is Categories ...."
+title: "Categories|分类"
+description: ""
 header-img: "img/header_img/categories_bg.jpg"
 ---
