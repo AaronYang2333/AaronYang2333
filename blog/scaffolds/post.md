@@ -6,4 +6,5 @@ catalog: true
 header-img:
 tags:
 categories:
+mathjax: true
 ---
