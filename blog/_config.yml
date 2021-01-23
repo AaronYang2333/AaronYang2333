@@ -45,7 +45,7 @@ favicon: img/avatar/mona_lisa.ico
 
 
 # Signature Setup
-signature: true # show signature
+signature: false # show signature
 signature-img: img/signature/ay-white.png
 
 

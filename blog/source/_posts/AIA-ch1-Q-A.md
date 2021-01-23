@@ -4,7 +4,7 @@ catalog: true
 mathjax: true
 date: 2021-01-21 11:03:51
 subtitle:
-header-img:
+header-img: cruves.png
 tags:
 categories:
 ---
@@ -16,6 +16,8 @@ For any monotonic functions, *f*, *g* from the positive integers to the positive
   - **O** big O, $$\exists \quad c $$ which *c* > 0 and real number $${n_0}$$, has $$f(n) 	\leqslant c \cdot g(n)$$, for all  $$n \geqslant {n_0}$$.
   - **Ω** big Omega, $$\exists \quad c $$ which *c* > 0 and real number $${n_0}$$, has $$f(n) 	\geqslant c \cdot g(n)$$, for all  $$n \geqslant {n_0}$$.
   - **Θ** big Theta, $$\exists \quad {c_1} \quad and \quad {c_2} $$ which $${c_1}$$ > 0 and $${c_2}$$ > 0 and real number $${n_0}$$, has $${c_1} \cdot g(n) \leqslant f(n)	\leqslant {c_2} \cdot g(n)$$, for all  $$n \geqslant {n_0}$$.
+
+![as](fn_gn.png)
   
 ### Theorems
   - *G = (V, E), the following statements are equivalent:*
@@ -41,7 +43,7 @@ For any monotonic functions, *f*, *g* from the positive integers to the positive
 ### Review Q&A
 1. Mark the following assertions as TRUE or FALSE. No need to provide any justification.
   - a. $$n = O(n^2)$$
-    > - True. since $$f(n) = n \, and \, g(n) = n^2 $$ and this is big O annotation, which requires $$f(n) 	\leqslant c \cdot g(n)$$ when  $$n \geqslant {n_0}$$. In the issue, $$n <= c \cdot n^2$$, meets the requirements, so it is correct.
+    > - True. since $$f(n) = n \, and \, g(n) = n^2 $$ and this is big O annotation, which requires $$f(n) 	\leqslant c \cdot g(n)$$ when  $$n \geqslant {n_0}$$. <br>In the issue, $$n <= c \cdot n^2$$, meets the requirements, so it is correct.
   - b. $$n = O( \sqrt[2]{n})$$
     > - False. $$n >= c \cdot \sqrt[2]{n}$$ should use Ω
   - c. $$log(n) = Ω(n)$$
@@ -53,15 +55,16 @@ For any monotonic functions, *f*, *g* from the positive integers to the positive
   - f. $$7 \cdot (log(n))^2 + 2n \cdot log(n) = Ω(log(n))$$
     > - True. let $$A = log(n)$$, so we have $$7A^2 + 2 \cdot n \cdot A >= A$$
   - g. $$5n \cdot log(n) + 1024 n \cdot log(log(n)) = Θ(n \cdot log(n))$$
-    > - True
+    > - True. let $$A = log(n)$$,<br> so we have $$5 \cdot n \cdot A + 1024 \cdot n \cdot log(A) = \Theta(n \cdot A)$$. not easy to compare. but we already knew log(n) < n. <br> So $$5 \cdot n \cdot A + 1024 \cdot n \cdot log(A) < 5 \cdot n \cdot A + 1024 \cdot n \cdot A$$. <br> let $$B = n \cdot log(n) $$, we will have $$5 \cdot B + 1024 \cdot B = 1029B \, v.s. \Theta(B)$$. <br>f(n) = 1029B, g(n) = B. There exist many $${c_1} \, {c_2}$$ could meet $${c_1} \cdot g(n) \leqslant f(n)	\leqslant {c_2} \cdot g(n)$$.
   - h. $$2^n + 100 \cdot n^2 + n^{100}= O(n^{101})$$
-    > - False
+    > - False. u can see the head img. $$2^n$$ grow faster than $$n^{100}$$. so left part bigger than right. <br>The statement is wrong, and should use $$\Omega$$
   - i. $$(1/3)^n + 100 = O(1)$$
-    > - True
+    > - False. $$(1/3^n)$$ will going to zero when n > 0. the left part will never beat the 101. so LHS is smaller or bigger than RHS when choose different *c*. Thus the statement is wrong.
 2. **(T/F)** Any function which is $$Ω(log(n))$$ is also $$Ω(log(log(n)))$$.
-  > - True
+  > - True. Assume there is a f(n) >= c * log(n).<br>
+  and we also knew, log(n) > log(log(n)) in any suitation. so we have f(n) >= c * log(n) > c *log(log(n)). 
 3. **(T/F)** If f(n) = Θ(g(n)) then g(n) = Θ(f(n))
-  > - True
+  > - True. 
 4. **(T/F)** If f(n) = Θ(g(n)) then f(n) = Ω(g(n)).
   > - True
 5. **(T/F)** If f(n) = Ω(g(n)) then $$2^{f(n)} = Ω(2^{g(n)})$$.
