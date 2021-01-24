@@ -2,47 +2,47 @@
 
 .body--home {
   /* Common color */
-  --common-color: #0085a1;
+  --common-color: #36bc98;
   /* body */
   --background-color: #ffffff;
   /* header */
   --header-color: white;
   /* navbar */
-  --navbar-nav-a-color: #777;
-  --navbar-nav-a-color-hover: #333;
+  --navbar-nav-a-color: #404040;
+  --navbar-nav-a-color-hover: #404040;
   --navbar-color: rgba(255, 255, 255, .9);
   --border-bottom-color: rgba(255, 255, 255, .9);
   --navbar-brand-color_1170: #404040;
-  --navbar-brand-color-hover_1170: #0085a1;
+  --navbar-brand-color-hover_1170: #404040;
   --navbar-brand-color_768: white;
   --navbar-brand-color-hover_768: rgba(255, 255, 255, 0.8);
   /* post-title、post-subtitle、post-content */
-  --post-content-color-hover: #0085a1;
+  --post-content-color-hover: #777;
   /* tags */
   --tags-color: gray;
   --tags-border-color: gray;
-  --tags-color-hovor: #0085a1;
-  --tags-border-color-hovor: #0085a1;
+  --tags-color-hovor: #36bc98;
+  --tags-border-color-hovor: #36bc98;
   --tags-a-background-color: rgba(255, 255, 255, .4);
   --sidebar-tags-color: #bfbfbf;
   --sidebar-tags-border-color: #bfbfbf;
-  --sidebar-tags-color-hovor: #0085a1;
+  --sidebar-tags-color-hovor: #36bc98;
   /* pager */
   --pager-color: #404040;
   --pager-color-hover: white;
-  --pager-background-color-hover: #0085a1;
+  --pager-background-color-hover: #36bc98;
   /* fa */
   --fa-color: white;
   /* visitor */
-  --visitor-color: #0085a1;
+  --visitor-color: #36bc98;
   /* copyright */
-  --copyright-color: #337ab7;
-  --copyright-color-hovor: #0085a1;
+  --copyright-color: #777;
+  --copyright-color-hovor: #36bc98;
   --copyright-text-muted-color: #777;
   /* top */
   --top-color: #f46267;
   /* scroll */
-  --scoll-background-color: #09f;
+  --scoll-background-color: #36bc98;
   /* hr */
   --hr-background-color: #eee;
   /* tag_cloud */
@@ -55,7 +55,7 @@
   /* viewer */
   --viewer-background-color: rgba(0, 0, 0, .5);
   /* toggle-button */
-  --toggle-border-color: #0085a1;
+  --toggle-border-color: #36bc98;
   --toggle-color: #1f1f1f;
   --toggle-hover: rgba(0, 0, 0, .1);
 }
@@ -416,7 +416,7 @@ hr {
   --color-default: #404040;
   --blockquote-color: gray;
   --post-container-a-color: #337ab7;
-  --post-container-a-color-hover: #0085a1;
+  --post-container-a-color-hover: #36bc98;
   --table-border-color: #eee;
   /* tip */
   --tip-color: rgba(51, 51, 51, 0.9);

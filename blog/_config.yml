@@ -36,8 +36,7 @@ SEOTitle: Current Tab
 email: aaron19940628@gmail.com
 description: "aaron yang's IT blog"
 keyword: "Aaron,Yang,AYAYAY,23333,aaron,Bo,USC,dsci,csci,551,552,553,570,560,544,blog,Blog"
-header-img: img/header_img/newhome_bg.jpg
-archives-img: img/header_img/archive_bg2.jpg
+header-img: img/header_img/big_bear_lake.jpg
 
 
 # Favicon settings
@@ -157,6 +156,7 @@ baidu_push: true
 
 # Custom Setting End
 
+# enable Math Feature(Latex)
 math:
   engine: 'mathjax'
   mathjax:
