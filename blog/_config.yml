@@ -3,8 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: AYAYAY's Note
-subtitle: 瞎逼逼呗~~~
+nav_title: Aaron's Note # the title showed in your navigation bar
+title:  # the title showed in your front index page
+subtitle:  
 author: Aaron Yang
 language: zh-CN
 timezone:
@@ -135,7 +136,6 @@ gitment:
 ##
 # disqus_username: your-disqus-ID
 
-
 # Analytics settings
 
 ## Google Analytics
@@ -156,7 +156,7 @@ baidu_push: true
 
 # Custom Setting End
 
-# enable Math Feature(Latex)
+# Math Feature(Latex)
 math:
   engine: 'mathjax'
   mathjax:
@@ -294,6 +294,12 @@ search:
 ##
 theme: livemylife
 
+# AD config
+ad_enable: false
+ad:
+  source: img/header_img/tt.png    # use absolute URL, seeing it's used in both `/` and `/about/`
+  link: "asda"
+  close_in_n_sec: 5
 
 # Gitter
 ## Docs:https://gitter.im/?utm_source=left-menu-logo

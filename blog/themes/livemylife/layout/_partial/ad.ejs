@@ -1,0 +1,17 @@
+<!-- Advertisement -->
+<% if(config['ad_enable']) { %>
+<div class="advertisement">
+ 
+</div>
+
+<script>
+
+</script>
+
+<style>
+.advertisement{
+  height: 100px; 
+  background-image: url('<%= config.root + config.ad["source"] %>');
+}
+</style>
+<% }%>
