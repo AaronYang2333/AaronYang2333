@@ -37,7 +37,8 @@ For any monotonic functions, *f*, *g* from the positive integers to the positive
     > 3. topological sort
       - the result of topological sort is not unique
   -  *If G is a connected planar graph with V vertices, E edges, and F faces, then V - E + F = 2*
-    > - faces represent disjoint area.
+    > faces represent disjoint area.
+    <img src="v_e_f_2.png"  style="display:inline;box-shadow: none !important;">
   - *In any simple connected planar graph with at least 3 vertices, $$E < 3 \cdot V - 6$$*
   - *A simple connected planar graph with at least 3 vertices has a vertex of degree 5 or less.*
   - *[Coloring Planar Graph] every planar graph can be colored with at most six colors.*
@@ -64,10 +65,10 @@ For any monotonic functions, *f*, *g* from the positive integers to the positive
     > - **False**. u can see the head img. $$2^n$$ grow faster than $$n^{100}$$. so left part bigger than right. <br>The statement is wrong, and should use $$\Omega$$
   - i. $$(1/3)^n + 100 = O(1)$$
     > - **False**. $$(1/3)^n$$ will going to zero when n > 0. the left part will never beat the 101. so LHS is smaller or bigger than RHS when choose different *c*. Thus the statement is wrong.
-2. **(T/F)** Any function which is $$Ω(log(n))$$ is also $$Ω(log(log(n)))$$.
+2. **(T/F)** Any function which is $$Ω(log(n))$$ is also $$Ω(log(log(n)))$$.<img src="lecture.png" style="width:30px;display:inline;box-shadow: none !important;">
   > - **True**. Assume there is a f(n) >= c * log(n).<br>
   and we also knew, log(n) > log(log(n)) in any suitation. so we have f(n) >= c * log(n) > c * log(log(n)). 
-3. **(T/F)** If f(n) = Θ(g(n)) then g(n) = Θ(f(n))
+3. **(T/F)** If f(n) = Θ(g(n)) then g(n) = Θ(f(n))<img src="lecture.png" style="width:30px;display:inline;box-shadow: none !important;">
   > - **True**. becasue f(n) = Θ(g(n)), we have $$c_1 \cdot g(n) <= f(n) <= c_2 \cdot g(n)$$. LHS multiplt $$1 / c_1$$ => $$g(n) <= \frac{1}{c_1}f(n)$$. RHS multiplt $$1 / c_2$$ => $$\frac{1}{c_2}f(n) <= g(n)$$. <br>In all, we have $$\frac{1}{c_2}f(n) <= g(n) <= \frac{1}{c_1}f(n) \, $$ => $$\, b_1f(n) <= g(n) <= b_2f(n)$$
 4. **(T/F)** If f(n) = Θ(g(n)) then f(n) = Ω(g(n)).
   > - **True**. becasue f(n) = Θ(g(n)), we have $$c_1 \cdot g(n) <= f(n) <= c_2 \cdot g(n)$$. LHS is what you need. so this is true.
@@ -127,7 +128,7 @@ in increasing order of growth rate, with g(n) following f(n) in your list if and
 
 4. Arrange the following functions
 $$4^{log(n)},\, \sqrt{log(n)},\, n^{log(log(n))},\, (\sqrt{2})^{log(n)},\, 2^{\sqrt{2log(n)}},\, n^{1/log(n)},\, (log(n))!$$
-in increasing order of growth rate with g(n) following f(n) in your list if and only if f(n) = O(g(n)).
+in increasing order of growth rate with g(n) following f(n) in your list if and only if f(n) = O(g(n)).<img src="lecture.png" style="width:30px;display:inline;box-shadow: none !important;">
   > - **Solution** we can follow this order
   $O(1) <= O(log(n)) <= O((log(n))^C) <= O(C^{log(n)}) <= O(n) <= O(n \cdot log(n)) <= O(n^C) <= O((log(n))!) <= O(n^{log(n)}) <= O(C^n)$
   And we can simply some of them in first place.
