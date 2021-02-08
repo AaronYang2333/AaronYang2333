@@ -1,5 +1,5 @@
 ---
-title: $$[Algorithms \, In \, Action]-CH2\,Amortized Analysis$$
+title: $$[Algorithms \, In \, Action]-CH2\,Amortized \,\, Analysis$$
 catalog: true
 mathjax: true
 date: 2021-01-24 11:09:23
@@ -45,24 +45,24 @@ There are generally three methods for performing amortized analysis:
 	> - **Solution**
 	> - The aggregate method computes the upper bound **T(n)** on the total cost of **n** operations. The amortized cost is given by **T(n)/n**. In this method each operation will get the same amortized cost, even if there are several types of operations in the sequence.
 
-2. (T/F) Amortized analysis is used to determine the average runtime complexity of an algorithm.
+2. **(T/F)** Amortized analysis is used to determine the average runtime complexity of an algorithm.
 	> - **False**
 	> - what is "average complexity"? that is ask you to compute the runtime complexity of a single operation when given **n** random input.(focus on this operation and compute all best case, bad case and so on. )
 	> - "Amortized analysis" is another concept, actually this analysis is looking at the worst-case run time per operation, rather than per input, that's the difference. (focus on a sequene of operation and in worst-case.)
 
-3. (T/F) Compared to the worst-case analysis, amortized analysis provides a more accurate upper bound on the performance of an algorithm.
+3. **(T/F)** Compared to the worst-case analysis, amortized analysis provides a more accurate upper bound on the performance of an algorithm.
 	> - **True**
 	> - that's what the definition says.
 
-4. (T/F) The total amortized cost of a sequence of **n** operations gives a lower bound on the total actual cost of the sequence.
+4. **(T/F)** The total amortized cost of a sequence of **n** operations gives a lower bound on the total actual cost of the sequence.
 	> - **False**
 	> - The aggregate method computes the upper bound **T(n)** on the total cost of n operations.
 
-5. (T/F) Amortized constant time for a dynamic array is still guaranteed if we increase the array size by 5%.
+5. **(T/F)** Amortized constant time for a dynamic array is still guaranteed if we increase the array size by 5%.
 	> - **True**
 	> - In practice, programming languages, like JAVA and Python extend array capacity by multiple 1.6, which means increasing the array size by 60%. And ithey still can remain the constant runtime complexity. So if only increase 5%, it will work as well.
 
-6. (T/F) If an operation takes O(1) expected time, then it takes O(1) amortized time.
+6. **(T/F)** If an operation takes O(1) expected time, then it takes O(1) amortized time.
 	> - **False**
 	> - "expected time" equals to "avgerage time". 
 
