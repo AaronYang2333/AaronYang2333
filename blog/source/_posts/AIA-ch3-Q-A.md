@@ -13,6 +13,24 @@ categories:
 - CSCI 570
 ---
 
+### Heap
+- Three types of heap
+	> **Binary Heap**
+		>> asdasda
+
+	> **Binomial Heap**
+		>> **Definition**: <br>A binomial heap is a collection (a linked list) of at most Celling(log(n)) binomial trees (<u>**of unique rank**</u>) in increasing order of size where each tree has a heap ordering property.<br>
+		>> **Binomial Trees**
+		>>> The binomial tree $$B_k$$ is defined as 
+		>>> 1. $$B_0$$ is a single node
+		>>> 2. $$B_k$$ is formed by joining two $$B_{k - 1}$$ trees
+		>>> <img src="BT.png"  style="display:inline;box-shadow: none !important;">
+
+	> **Fibonacci Heap**
+		>> <u>general idea</u> is to have a more relaxed structure (compared to binomial heaps) that will improve *decreaseKey* complexity to constant amortized time
+
+
+
 
 ### Review Q&A
 1. What is the worst-case runtime complexity of finding the smallest item in a binary min-heap?<img src="lecture.png"  style="width:30px;display:inline;box-shadow: none !important;">
@@ -47,27 +65,32 @@ categories:
 9. **(T/F)** The following array is a max heap: [10, 3, 5, 1, 4, 2].
 	> - **False**
 	
-10. **(T/F)** In a binary max-heap with n elements, the worst-case runtime complexity of finding the second largest element is O(1).
+10. **(T/F)** In a binary max-heap with **n** elements, the worst-case runtime complexity of finding the second largest element is $O(1)$.
 	> - **True**
 
 11. **(T/F)** If item A is an ancestor of item B in a heap then it must be the case that the insert(A) operation occurred before insert(B).
 	> - **False**
-	> - abcd
-12. **(T/F)** Using a binary heap we can sort any array of size n in O(n) time.
+	> - It could be any order, but the final result will be the same.
+
+12. **(T/F)** Using a binary heap we can sort any array of size n in $O(n)$ time.
 	> - **False**
-	> - abcd
-13. **(T/F)** In a binomial min-heap with n elements, the worst-case runtime complexity of finding the smallest element is O(1).
+	> - dont know
+
+13. **(T/F)** In a binomial min-heap with **n** elements, the worst-case runtime complexity of finding the smallest element is $O(1)$.
+	> - **True**
+	> - this is min-heap, the smallest element will be placed in the top.
+
+14. **(T/F)** In a binomial min-heap with **n** elements, the worst-case runtime complexity of finding the second smallest element is $O(1)$.
+	> - **True**
+	> - same reason I think.
+
+15. **(T/F)** By using a binomial heap we can sort data of size n in $O(n)$ time.
 	> - **False**
-	> - abcd
-14. **(T/F)** In a binomial min-heap with n elements, the worst-case runtime complexity of finding the second smallest element is O(1).
+	> - could sort **n** elements in $O(nlog(n))$ time.
+
+16. **(T/F)** Given a Fibonacci heap of size **n**, the maximum number of trees is that heap is **n**.
 	> - **False**
-	> - abcd
-15. **(T/F)** By using a binomial heap we can sort data of size n in O(n) time.
-	> - **False**
-	> - abcd
-16. **(T/F)** Given a Fibonacci heap of size n, the maximum number of trees is that heap is n.
-	> - **False**
-	> - abcd
+	> - dont know
 
 ### Exercise Q&A
 1. Given a sequence of numbers, 3, 5, 2, 8, 1, 5, 2,
@@ -75,36 +98,39 @@ categories:
 	- b. show an array that would be the result after the call to deleteMi() on this heap
 
   > - **Solution**
+	> <img src="heap.gif"  style="display:inline;box-shadow: none !important;">
 	
 2. Devise an algorithm of merging two binary heaps. What is its runtime complexity?
 	> - **Solution**
-	> - abcd
-3. Suppose you have two binary min-heaps, A and B, with a total of n elements between them. You want to discover if A and B have a key in common. Devise an algorithm to this problem that takes O(n log n) time.
+	> <img src="e2.png"  style="display:inline;box-shadow: none !important;">
+3. Suppose you have two binary min-heaps, A and B, with a total of **n** elements between them. You want to discover if A and B have a key in common. Devise an algorithm to this problem that takes $O(n \cdot log(n))$ time.
 	> - **Solution**
 	> - abcd
 4. The values 1, 2, 3, …, 63 are all inserted (in any order) into an initially empty minheap. What is the smallest number that could be a leaf node?
 	> - **Solution**
-	> - abcd
+	> <img src="e4.png"  style="display:inline;box-shadow: none !important;">
 
 5. Prove that it is impossible construct a min-heap (not necessarily binary) in a comparison-based model with both the following properties:
-	- a. deleteMin() runs in O(1)
-	- b. buildHeap() runs in O(n), where n is the input size.
+	- a. deleteMin() runs in $O(1)$
+	- b. buildHeap() runs in $O(n)$, where n is the input size.
 
   > - **Solution**
   > - abcd
 
-6. Given an unsorted array of size n, devise a heap-based algorithm that finds the k-th largest element in the array. What is its runtime complexity?
+6. Given an unsorted array of size **n**, devise a heap-based algorithm that finds the k-th largest element in the array. What is its runtime complexity?
 	> - **Solution**
 	> - abcd
 7. Recall that two sorted arrays of size n can be merged into a single sorted list in linear time O(n). Suppose there are k > 2 sorted arrays, each of size n. Devise a heap-based algorithm that merges k arrays and requires at most O(k) extra space.
 	> - **Solution**
 	> - abcd
-8. Given a stream of data (its size is unknown in advance), devise a heap-based algorithm that finds the k-th largest element in the array. Your algorithm must take at most O(k) extra space. What is its runtime complexity?
+8. Given a stream of data (its size is unknown in advance), devise a heap-based algorithm that finds the k-th largest element in the array. Your algorithm must take at most $O(k)$ extra space. What is its runtime complexity?
 	> - **Solution**
-	> - abcd
+	> <img src="e8.png"  style="display:inline;box-shadow: none !important;">
+
 9. Given a stream of data (its size is unknown in advance), devise a heap-based algorithm that finds the median of elements read so far. What is its runtime complexity?
 	> - **Solution**
-	> - abcd
+	> - use *Exercise 8*'s Online Algorithm
+	
 10. Given a sequence of numbers, 3, 5, 2, 8, 1, 5, 2, 7,
 	- a. draw a binomial heap by inserting these numbers, reading them from left to right; and
 	- b. show a heap that would be the result after the call to deleteMin() on this heap.
