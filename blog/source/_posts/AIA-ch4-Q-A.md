@@ -13,6 +13,15 @@ categories:
 - CSCI 570
 ---
 
+### Gneral Solution
+#### Shortest Path**
+> Dijkstra **(cannot has negative weight)**
+> BFS **(require a graph doesn't consider weight)**
+> Topological Sort **(require directed graph)**
+
+#### Minimum Cost
+> MST
+
 ### Minimum Spanning Trees
 #### Kruskal's Algorithm
 > <img src="Kruskal.png"  style="display:inline;box-shadow: none !important;">
@@ -21,8 +30,12 @@ categories:
 > **Complexity**
 >> <img src="Prim.png"  style="display:inline;box-shadow: none !important;">
 
+#### Feature
+> The smallest crossing edge must be in the MST.
+
 #### Dijkstra's Algorithm
-> sada
+> does not work on graphs with negative weights.
+> <img src="dij1.png"  style="display:inline;box-shadow: none !important;">
 
 #### Huffman Tree
 
@@ -34,6 +47,7 @@ categories:
 2. **(T/F)** Any weighted undirected graph with distinct edge weights has exactly one minimum spanning tree.
 	> - **False**
 	> - maybe differnt order.
+	> <img src="r2.png"  style="display:inline;box-shadow: none !important;">
 
 3. **(T/F)** Suppose we have a graph where each edge weight value appears at most twice. Then, there are at most two minimum spanning trees in this graph.
 	> - **False**
@@ -44,8 +58,11 @@ categories:
 	> - it should work.
 
 5. **(T/F)** If a connected undirected graph $$G = (V, E)$$ has $n = |V|$ vertices and $n + 5$ edges, we can find the minimum spanning tree of $$G$$ in $O(n)$ runtime.
-	> - **False**
-	> - neither Kruskal nor Prim can do that.
+	> - **True**
+	> - first, this graph has a circle at least.
+	> the original time complexity of prim algorithm is $O((V + E) \cdot log(V))$. but this complexity is for complete graph.<br>
+	> about this issue, the heap size = 6, so we can say the $log(V)$ is a constant. So we can find the MST in a linear time.
+	> <img src="r5.png"  style="display:inline;box-shadow: none !important;">
 
 6. **(T/F)** The first edge added by Kruskal’s algorithm can be the last edge added by Prim’s algorithm.
 	> - **True**
@@ -65,15 +82,18 @@ categories:
 
 10. **(T/F)** If all edges in a connected undirected graph have distinct positive weights, the shortest path between any two vertices is unique.
 	> - **False**
-	> - maybe there are some edges have same weight.
+	> <img src="r10.png"  style="display:inline;box-shadow: none !important;">
 
 11. **(T/F)** Suppose we have calculated the shortest paths from a source to all other vertices. If we modify the original graph $$G$$ such that weights of all edges are doubled, then the shortest path tree of $$G$$ is also the shortest path tree of the modified graph.
 	> - **True**
-	> - dont know
+	> - $x + y + z < a + b$
+	> - $2 \cdot (x + y + z) <2 \cdot (a + b)$ for sure.
 
 12. **(T/F)** Suppose we have calculated the shortest paths from a source to all other vertices. If we modify the original graph, $$G$$, such that weights of all edges are increased by 2, then the shortest path tree of $$G$$ is also the shortest path tree of the modified graph.
-	> - **True**
-	> - dont know
+	> - **False**
+	> - could be different.
+	> - counter example.
+	> <img src="r12.png"  style="display:inline;box-shadow: none !important;">
 
 ### Exercise Q&A
 1. At the Perfect Programming Company, the programmers are paired in order to ensure the highest quality of produced code. The productivity of each pair is the speed of the slowest programmer. Assuming an even number of programmers, devise an efficient algorithm for pairing them up so the total productivity of all programmers is maximized.
@@ -109,7 +129,7 @@ categories:
 	> - **O(n)**
 7. Given a graph, $G = (V, E)$, whose edge weights are integers in the range $[0, W]$, where $W$ is a relatively small integer number, we could run Dijkstra’s algorithm to find the shortest distances from the start vertex to all other vertices. Design a new algorithm that will run in linear time $O(V + E)$ and therefore outperform Dijkstra’s algorithm.
 	> - **Solution**
-	> - **O(n)**
+	> <img src="e7.png"  style="display:inline;box-shadow: none !important;">
 8. Given a directed acyclic graph, $G = (V, E)$, with nonnegative edge weights and the source $s$, devise a linear time algorithm to find the shortest distances from $s$ to all other vertices.
 	> - **Solution**
 	> - **O(n)**
