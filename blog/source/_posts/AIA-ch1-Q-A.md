@@ -20,6 +20,8 @@ For any monotonic functions, *f*, *g* from the positive integers to the positive
   - **O** big O, $$\exists \, c $$ which *c* > 0 and real number $${n_0}$$, has $$f(n) 	\leqslant c \cdot g(n)$$, for all  $$n \geqslant {n_0}$$.
   - **Ω** big Omega, $$\exists \, c $$ which *c* > 0 and real number $${n_0}$$, has $$f(n) 	\geqslant c \cdot g(n)$$, for all  $$n \geqslant {n_0}$$.
   - **Θ** big Theta, $$\exists \, {c_1} \, and \, {c_2} $$ which $${c_1}$$ > 0 and $${c_2}$$ > 0 and real number $${n_0}$$, has $${c_1} \cdot g(n) \leqslant f(n)	\leqslant {c_2} \cdot g(n)$$, for all  $$n \geqslant {n_0}$$.
+  - **Simple Graph** is an unweighted, undirected graph containing no graph cycle or multiple edges between two vertices.
+  ![as](simple_graph.png)
 
 ![as](fn_gn.png)
   
@@ -32,9 +34,9 @@ For any monotonic functions, *f*, *g* from the positive integers to the positive
     > 5. G is acyclic and if any two non-adjacent vertices are joined by an edge, the resulting graph has exactly one cycle. 
   - *In an undirected simple graph G = (V, E), there are at most $$\frac{V \cdot (V - 1)}{2}$$ edges. In short, by using the asymptotic notation, $$E = O(V^2)$$.*
   - *three way to traversal a graph:*
-    > 1. depth-first-search
-    > 2. breadth-first-search
-    > 3. topological sort
+    > 1. depth-first-search $Runtime Complexity: O(V + E)$
+    > 2. breadth-first-search $Runtime Complexity: O(V + E)$
+    > 3. topological sort $Runtime Complexity: O(V + E)$
       - the result of topological sort is not unique
   -  *If G is a connected planar graph with V vertices, E edges, and F faces, then V - E + F = 2*
     > faces represent disjoint area.
@@ -107,7 +109,7 @@ For any monotonic functions, *f*, *g* from the positive integers to the positive
 $$log(n^n),\, n^2,\, n^{log(n)},\, nlog(log(n)),\, 2^{log(n)},\, (log(n))^2,\, n^{\sqrt{2}}$$
 in increasing order of growth rate, with g(n) following f(n) in your list if and only if f(n) = O(g(n)).
   > - **Solution** we can follow this order
-  $O(1) <= O(log(n)) <= O((log(n))^C) <= O(C^{log(n)}) <= O(n) <= O(n \cdot log(n)) <= O(n^C) <= O((log(n))!) <= O(n^{log(n)}) <= O(C^n)$
+  $O(1) <= O(log(n)) <= O((log(n))^C) <= O(C^{log(n)}) <= O(n) <= O(n \cdot log(n)) <= O(n^C) <= O((log(n))!) <= O(log(n)^{log(n)}) <= O(n^{log(n)}) <= O(C^n)$
   And we can simply some of them in first place.
   $$① \, log(n^n) = n \cdot log(n) \, ⑤ \, 2^{log_2 n} = log_2 2^n = n \cdot 1 = n$$,
   So , finally, we have <br>
