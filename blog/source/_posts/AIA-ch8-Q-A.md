@@ -1,5 +1,5 @@
 ---
-title: $$[Algorithms \, In \, Action]-CH7\, Linear  \,\, Programming $$
+title: $$[Algorithms \, In \, Action]-CH8\, Linear  \,\, Programming $$
 catalog: true
 mathjax: true
 date: 2021-04-20 05:47:22

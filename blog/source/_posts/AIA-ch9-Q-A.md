@@ -1,5 +1,5 @@
 ---
-title: $$[Algorithms \, In \, Action]-CH7\, NP  \,\, Completeness $$
+title: $$[Algorithms \, In \, Action]-CH9\, NP  \,\, Completeness $$
 catalog: true
 mathjax: true
 date: 2021-04-20 05:47:29
