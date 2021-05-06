@@ -295,7 +295,7 @@ search:
 theme: livemylife
 
 # AD config
-ad_enable: false
+ad_enable: true
 ad:
   source: img/header_img/tt.png    # use absolute URL, seeing it's used in both `/` and `/about/`
   link: "asda"
